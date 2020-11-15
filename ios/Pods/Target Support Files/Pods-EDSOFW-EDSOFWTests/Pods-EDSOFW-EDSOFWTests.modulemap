@@ -1,0 +1,6 @@
+module Pods_EDSOFW_EDSOFWTests {
+  umbrella header "Pods-EDSOFW-EDSOFWTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

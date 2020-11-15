@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <title>List Mail</title>
+
+  <style>
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      text-decoration: none;
+    }
+    .icon {
+      font-size: 50px;
+      color: #689f38
+    }
+    .mailContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-content: center;
+      align-items: center;
+      margin-top: 10px
+    }
+    .mailContainer_title {
+      font-size: 20px;
+      font-weight: 600
+    }
+    .mailContainer_content {
+      font-size: 14;
+      font-weight: 300;
+      color: #616161
+    }
+  </style>
+</head>
+<body>
+  <div id="ListMailWV"></div>
+
+  <script>
+    function renderView(id) {
+      const htmlView = `
+        <div class="mailContainer">
+          <div>
+            <i class="fas fa-user-circle icon"></i>
+          </div>
+          <div>
+            <p class="mailContainer_title">ESMessage</p>
+            <p class="mailContainer_content">This is first message from ESMessage!...</p>
+          </div>
+          <div>
+            <p>19:00</p>
+          </div>
+        </div>
+      `
+
+      const listContainer = document.createElement('div')
+      const ele = document.createElement('ul')
+
+      const myEle = document.getElementById(`${id}`).appendChild(listContainer)
+      listContainer.appendChild(ele)
+
+      for (let i = 0; i < 20; i++) {
+        const listItem = document.createElement('li')
+        listItem.innerHTML = htmlView
+        ele.appendChild(listItem)
+      }
+    }
+
+    renderView('ListMailWV')
+  </script>
+</body>
+</html>
