@@ -13,8 +13,8 @@ import Fa5Icon from 'react-native-vector-icons/FontAwesome5';
 const SignIn = ({ navigation }) => {
   const [username, onChangeUsername] = React.useState('0911911911');
   const [pwd, onChangePwd] = React.useState('admin');
-  const IGoogle = <Fa5Icon name="google" size={25} color="#900" />;
-  const IFacebook = <Fa5Icon name="facebook" size={25} color="#1565c0" />;
+  const IGoogle = <Fa5Icon name="google" size={20} color="#900" />;
+  const IFacebook = <Fa5Icon name="facebook" size={20} color="#1565c0" />;
 
   useEffect(() => {
   }, []);
@@ -131,14 +131,14 @@ const styles = StyleSheet.create({
     width: '80%',
     textAlign:'left',
     fontWeight:'bold',
-    fontSize: 20,
+    fontSize: 18,
     marginBottom: 20
   },
   pwdWrap: {
     marginTop: 60
   },
   pwdWrap_label: {
-    fontSize: 18,
+    fontSize: 14,
     color: '#e65100',
     fontWeight: '500'
   },
@@ -161,7 +161,7 @@ const styles = StyleSheet.create({
     marginTop: 20
   },
   appButtonText: {
-    fontSize: 18,
+    fontSize: 16,
     color: "#fff",
     fontWeight: "bold",
     alignSelf: "center"
@@ -178,13 +178,13 @@ const styles = StyleSheet.create({
     borderWidth: 1
   },
   socialBtn_googText: {
-    fontSize: 18,
+    fontSize: 14,
     color: "#e65100",
     fontWeight: "bold",
     alignSelf: "center"
   },
   socialBtn_fbText: {
-    fontSize: 18,
+    fontSize: 14,
     color: "#1565c0",
     fontWeight: "bold",
     alignSelf: "center"
@@ -202,12 +202,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row'
   },
   textWrap_greyLabel: {
-    fontSize: 18,
+    fontSize: 14,
     color: "#bdbdbd",
     fontWeight: "600",
   },
   textWrap_orangeLabel: {
-    fontSize: 18,
+    fontSize: 14,
     color: "#e65100",
     fontWeight: "600",
   }

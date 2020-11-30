@@ -4,7 +4,8 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.org.reactjs.native.example.onesignal</string>
+		<string>group.org.reactjs.native.example.EDSOFW.OneSignalNotificationServiceExtension.onesignal</string>
+		<string>group.org.reactjs.native.example.EDSOFW.onesignal</string>
 	</array>
 </dict>
 </plist>
