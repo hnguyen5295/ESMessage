@@ -111,7 +111,7 @@ const SignIn = ({ navigation }) => {
         </TouchableOpacity>
       </View>
       <View style={styles.textWrap}>
-        <Text style={styles.textWrap_greyLabel}>Don't have an account? </Text>
+        <Text style={styles.textWrap_greyLabel}>Don't have an account? Create now!!!</Text>
         <TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
           <Text style={styles.textWrap_orangeLabel}>Sign Up</Text>
         </TouchableOpacity>
