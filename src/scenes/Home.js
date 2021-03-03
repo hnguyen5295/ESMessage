@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <View style={{ backgroundColor: 'red', flex: 1 }}>
-      
+
       <Tab.Navigator
         initialRouteName="ListMail"
         tabBarOptions={{

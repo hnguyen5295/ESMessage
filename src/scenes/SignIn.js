@@ -1,4 +1,4 @@
-import React, {useEffect}  from 'react';
+import React, { useEffect } from 'react';
 import {
   StyleSheet,
   View,
@@ -36,7 +36,7 @@ const SignIn = ({ navigation }) => {
         // })
       })
       // Catch any errors we hit and update the app
-      .catch(error => console.log('ERROR:'+error));
+      .catch(error => console.log('ERROR:' + error));
   }
 
   const login = () => {
@@ -45,10 +45,11 @@ const SignIn = ({ navigation }) => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         "phone": username,
-        "password":pwd
-      })};
+        "password": pwd
+      })
+    };
 
-    fetch(`https://api.edsogroup.vn/api/login`,requestOptions)
+    fetch(`https://api.edsogroup.vn/api/login`, requestOptions)
       .then(response => response.json())
       .then(data => {
         console.log(data);
@@ -56,15 +57,15 @@ const SignIn = ({ navigation }) => {
         if (data.token) {
           msg = 'LOGIN SUCCESFULL';
         } else {
-         if(data.username){
-           msg=data.username[0];
-         }
+          if (data.username) {
+            msg = data.username[0];
+          }
         }
         Alert.alert(
           msg
-        ); 
+        );
       })
-      .catch(error => console.log('ERROR:'+error));
+      .catch(error => console.log('ERROR:' + error));
   }
 
   showAlert = (title, message) => {
@@ -72,15 +73,15 @@ const SignIn = ({ navigation }) => {
       title,
       message,
       [
-        {text: 'OK', onPress: () => console.log('OK Pressed')},
+        { text: 'OK', onPress: () => console.log('OK Pressed') },
       ],
-      {cancelable: false},
+      { cancelable: false },
     );
   }
 
   return (
     <View style={styles.container}>
-    <Text style={styles.signInTitle}>Sign in</Text>
+      <Text style={styles.signInTitle}>Sign in</Text>
       <TextInput
         value={username}
         placeholder="Mobile phone"
@@ -100,7 +101,7 @@ const SignIn = ({ navigation }) => {
         <Text style={styles.appButtonText}>Login</Text>
       </TouchableOpacity>
       <View style={styles.pwdWrap}>
-        <Text style={styles.pwdWrap_label}>Forgot password?</Text>
+        <Text style={styles.pwdWrap_label}>Forgot password???</Text>
       </View>
       <View style={styles.socialBtn}>
         <TouchableOpacity style={styles.socialBtn_wrapper}>
@@ -129,8 +130,8 @@ const styles = StyleSheet.create({
   },
   signInTitle: {
     width: '80%',
-    textAlign:'left',
-    fontWeight:'bold',
+    textAlign: 'left',
+    fontWeight: 'bold',
     fontSize: 18,
     marginBottom: 20
   },

@@ -2,6 +2,7 @@
 1 - npm i OR yarn
 2 - yarn start --reset-cache
 3 - react-native run-ios
+4 - Modifying your app: Hit ⌘R in your iOS Simulator to reload the app and see your changes!
 
 
 # Testflight build: Please follow the instruction here: https://www.raywenderlich.com/10868372-testflight-tutorial-ios-beta-testing
@@ -64,4 +65,6 @@ https://stackoverflow.com/questions/61832232/invariant-violation-requirenativeco
 
 
 7/ No visible @interface for 'NSHTTPURLResponse' declares the selector 'valueForHTTPHeaderField:'
+react-native-webview@8.0.0 works fine.
 https://github.com/react-native-webview/react-native-webview/issues/1353
+

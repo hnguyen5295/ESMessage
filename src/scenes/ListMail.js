@@ -3,7 +3,7 @@ import {
   StyleSheet,
   View
 } from 'react-native';
-// import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-webview';
 
 
 const listMail = require('../webviews/ListMailWV.html')
@@ -12,10 +12,11 @@ const ListMail = () => {
 
   return (
     <View style={{ flex: 1 }}>
-      {/* <WebView
+      <WebView
         originWhitelist={['*']}
         source={listMail}
-      /> */}
+      />
+
     </View>
   );
 };
