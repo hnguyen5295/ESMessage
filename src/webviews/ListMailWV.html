@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <title>List Mail</title>
-
+  <!-- <script src="../common/databinder.js"></script> -->
   <style>
     p {
       margin: 0;
       padding: 0;
     }
+
     ul {
       list-style-type: none;
       padding: 0;
     }
+
     li {
       text-decoration: none;
     }
+
     .icon {
       font-size: 50px;
       color: #689f38
     }
+
     .mailContainer {
       display: flex;
       flex-direction: row;
@@ -30,10 +36,12 @@
       align-items: center;
       margin-top: 10px
     }
+
     .mailContainer_title {
       font-size: 20px;
       font-weight: 600
     }
+
     .mailContainer_content {
       font-size: 14;
       font-weight: 300;
@@ -41,13 +49,14 @@
     }
   </style>
 </head>
+
 <body>
   <div id="ListMailWV"></div>
 
   <script>
     function renderView(id) {
       const htmlView = `
-        <div class="mailContainer">
+        <div class="mailContainer" onClick="changeText()">
           <div>
             <i class="fas fa-user-circle icon"></i>
           </div>
@@ -74,7 +83,12 @@
       }
     }
 
+    function test() {
+      alert('Hello');
+    }
+
     renderView('ListMailWV')
   </script>
 </body>
+
 </html>

@@ -14,7 +14,7 @@ const ListMail = () => {
     <View style={{ flex: 1 }}>
       <WebView
         originWhitelist={['*']}
-        source={ listMail }
+        source={listMail}
       />
     </View>
   );

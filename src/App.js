@@ -6,9 +6,16 @@ import React from 'react';
 import {
   StyleSheet
 } from 'react-native';
-import Home from './scenes/Home';
-import SignIn from './scenes/SignIn';
-import SignUp from './scenes/SignUp';
+import Home from './screens/Home';
+import SignIn from './screens/SignIn';
+import SignUp from './screens/SignUp';
+import DefaultScreen from './screens/DefaultScreen';
+import SettingScreen from './screens/Setting';
+import HeaderScreen from './navigation/HeaderScreen';
+import HeaderLeft from './navigation/HeaderLeft';
+import HeaderRight from './navigation/HeaderRight';
+
+
 
 
 const Stack = createStackNavigator();
@@ -38,12 +45,29 @@ const App = () => {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="SignIn">
-        <Stack.Screen name="Home" component={Home} />
+      <Stack.Navigator initialRouteName="DefaultScreen">
+        <Stack.Screen name="Home" component={Home}
+          options={{
+            title: '',
+            headerStyle: {
+              backgroundColor: '#f4511e',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+            headerLeft: () => (<HeaderLeft headerText={'BACK'} />),
+            headerTitle: <HeaderScreen headerText={'EDSO'} />,
+            headerRight: () => (<HeaderRight headerText={'BACK'} />),
+          }}
+        />
         <Stack.Screen name="SignIn" component={SignIn} />
         <Stack.Screen name="SignUp" component={SignUp} />
+        <Stack.Screen name="DefaultScreen" component={DefaultScreen} />
+        <Stack.Screen name="SettingScreen" component={SettingScreen} options={{ headerTitle: null }} />
       </Stack.Navigator>
     </NavigationContainer>
+
   );
 };
 

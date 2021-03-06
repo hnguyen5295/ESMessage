@@ -3,9 +3,9 @@ import {
   StyleSheet
 } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { ListMail } from '../scenes/ListMail';
-import { CreateMail } from '../scenes/CreateMail';
-import { UserInfor } from '../scenes/UserInfor';
+import { ListMail } from '../screens/ListMail';
+import { CreateMail } from '../screens/CreateMail';
+import { UserInfor } from '../screens/UserInfor';
 
 
 const Tab = createBottomTabNavigator();
