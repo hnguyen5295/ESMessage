@@ -1,0 +1,52 @@
+{
+  "name": "EDSOFW",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "build:ios": "react-native bundle --entry-file='index.js' --bundle-output='./ios/main.jsbundle' --dev=false --platform='ios'"
+  },
+  "dependencies": {
+    "jetifier": "^1.6.6",
+    "lodash": "^4.17.21",
+    "lodash.isequal": "^4.5.0",
+    "lodash.isstring": "^4.0.1",
+    "lodash.omit": "^4.5.0",
+    "lodash.pick": "^4.4.0",
+    "react": "16.13.1",
+    "react-native": "0.63.3",
+    "react-native-elements": "^3.2.0",
+    "react-native-onesignal": "^4.0.5",
+    "react-native-tab-view": "^2.15.2",
+    "react-native-webview": "8.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/runtime": "^7.12.1",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-navigation/bottom-tabs": "^5.10.2",
+    "@react-navigation/native": "^5.8.2",
+    "@react-navigation/stack": "^5.11.1",
+    "babel-jest": "^26.6.1",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "eslint": "^7.12.0",
+    "eslint-import-resolver-babel-module": "^5.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^26.6.1",
+    "metro-react-native-babel-preset": "^0.63.0",
+    "react-native-gesture-handler": "^1.8.0",
+    "react-native-reanimated": "^1.13.1",
+    "react-native-safe-area-context": "^3.1.8",
+    "react-native-screens": "^2.12.0",
+    "react-native-vector-icons": "^7.1.0",
+    "react-test-renderer": "16.13.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
