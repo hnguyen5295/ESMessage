@@ -5,7 +5,7 @@ import {name as appName} from './src/app.json';
 
 async function componentDidMount() {
   /* O N E S I G N A L   S E T U P */
-  OneSignal.setAppId("ce8572ae-ff57-4e77-a265-5c91f00ecc4c");
+  OneSignal.setAppId("1a3867ac-6a43-4d16-95de-155937ae756f");
   OneSignal.setLogLevel(6, 0);
   OneSignal.setRequiresUserPrivacyConsent(false);
   OneSignal.promptForPushNotificationsWithUserResponse(response => {
